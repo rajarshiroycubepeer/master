@@ -18,7 +18,7 @@ header, section, article, footer{display: block;}
 a{color: #000; text-decoration:none; cursor: pointer;}
 .wrapper{
 	width: 1024px;
-	max-width: 98%;
+	max-width: 70%;
 	margin: 0 auto;
 }
 
