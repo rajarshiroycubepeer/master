@@ -128,67 +128,12 @@ header > #main > .wrapper > nav a:hover{
 }
 /********************************************************/
 /*BANNER***************************************/
-#banner > .blueberry{
-	position: relative;
-	top:130px;
-	width: 100%;
-	margin: 0 auto;		
-	background: #000;
-	max-height: 600px;	
-}
 #banner > .blueberry img{
-	width: 100%; 
 	opacity: 0.5; 
 	height:auto;
 	max-height: 600px;
 }
-.banner-image1 h1{
-	position: absolute;
-	top: 200px;
-	left: 100px;
-	background: rgba(0, 0, 0, .8);
-	color: #fff;
-	padding: 10px 30px 10px 30px;
-}
-.banner-image1 h1:nth-child(2){
-	position: absolute;
-	top: 259px;
-	left: 146px;
-	background: rgba(0, 0, 0, .8);
-	color: #fff;
-	padding: 10px 30px 10px 30px;
-}
-.banner-image1 a{
-	position: absolute;
-	top: 400px;
-	left: 400px;
-	background: #007FFF;
-	color: #fff;
-	padding: 10px 30px 10px 30px;
-	border-radius: 4px;
-	font-weight: bold;
-	transition: background, 0.3s, ease-in-out;
-}
-.banner-image1 a:hover{
-	background: #fff;
-	color: #333;
-}
-.banner-image2 h1{
-	position: absolute;
-	top: 200px;
-	right: 0px;
-	background: rgba(0, 0, 0, .8);
-	color: #fff;
-	padding: 10px 30px 10px 30px;
-}
-.banner-image2 p{
-	position: absolute;
-	top: 259px;
-	right: 0;
-	background: rgba(0, 0, 0, .8);
-	color: #fff;
-	padding: 10px 30px 10px 30px;
-}
+
 /****************************************************/
 /*SECTION***************************************/
 section{background: #fff; color: #000;}
