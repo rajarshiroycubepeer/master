@@ -123,15 +123,8 @@ header > #main > .wrapper > nav ul li{
   margin: 0 0 0 10px;
 }
 header > #main > .wrapper > nav a:hover{
-  color: #007FFF;
-  text-decoration: underline;
-}
-/********************************************************/
-/*BANNER***************************************/
-#banner > .blueberry img{
-	opacity: 0.5; 
-	height:auto;
-	max-height: 600px;
+  color: #e3a331;
+  text-decoration: none;
 }
 
 /****************************************************/
@@ -140,10 +133,10 @@ section{background: #fff; color: #000;}
 section > .wrapper li{display: inline;}
 
 /*SECTION-ABOUT US***************************************/
-section#about-us, section#team, section#services, section#portfolio, section#contact-us{padding:135px 0 100px 0;}
-section#about-us:target, section#team{padding: 135px 0 100px 0;}
+section#about-us, section#business, section#services, section#portfolio, section#contact-us{padding:135px 0 100px 0;}
+section#about-us:target, section#business{padding: 135px 0 100px 0;}
 section#about-us{
-	background-color: #007FFF;
+	background-color: #e3a331;
 	color: #fff;
 	margin: 130px 0 0 0;
 }
@@ -164,25 +157,26 @@ section#about-us > .wrapper > .col a:hover > img{
 }
 section:nth-child(odd){background: #EFEFEF;}
 /********************************************************/
-/*SECTION-TEAM***************************************/
-section#team > .wrapper h2{
+/*SECTION-business***************************************/
+section#business > .wrapper h2{
 	text-align: center; 
 	margin: 0 0 20px 0; 
-	color: #007FFF;
+	color: #e3a331;
 }
-section#team > .wrapper > .col, section#team > .wrapper .col h5, 
-section#team > .wrapper > .col h3, section#team > .wrapper .col ul{text-align: center; margin: 5px 0 5px 0;}
-section#team > .wrapper > .col img.team{
+section#business > .wrapper > .col, section#business > .wrapper .col h5, 
+section#business > .wrapper > .col h3, section#business > .wrapper .col ul{margin: 5px 0 5px 0;}
+section#business > .wrapper > .col img.business{
 	width: 170px; 
 	height: 120px; 
 	border-radius: 50%; 
 	box-shadow:  2px 2px 3px 0 rgba(0, 0, 0, .2);
 }
-section#team > .wrapper .col ul{margin: 20px 0 0 0;}
+section#business > .wrapper .col ul{margin: 20px 0 0 0;}
 /********************************************************/
 /*SECTION-SERVICES***************************************/
-section#services > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
-section#services > .wrapper p{margin: 20px 0 20px 0;}
+section#services > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #e3a331;}
+p.quotes{text-align:center; background-color: antiquewhite ;font-style: italic;margin: 20px 0 20px 0;}
+p.quotes:before, p.quotes:after {content: '"';}
 section#services > .wrapper > .col .span_3{text-align: center;}
 section#services > .wrapper > .col p{margin: 5px 0 15px 0;}
 section#services > .wrapper > .col img{
@@ -195,7 +189,7 @@ section#services > .wrapper > .col img{
 /****************************************************/
 /*SECTION-PORTFOLIO***************************************/
 section#portfolio > .wrapper{text-align: center;}
-section#portfolio > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
+section#portfolio > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #e3a331;}
 .clr{clear: both;}
 section#portfolio > .wrapper > label{
 	width: 20%;
@@ -214,7 +208,7 @@ section#portfolio > .wrapper > label.label-two{border-radius: 0px 1px 1px 0px;}
 section#portfolio > .wrapper > input.c-selector-all:checked ~ label.label-all,
 section#portfolio > .wrapper > input.c-selector-one:checked ~ label.label-one,
 section#portfolio > .wrapper > input.c-selector-two:checked ~ label.label-two{
-	background: #007FFF;
+	background: #e3a331;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
@@ -362,7 +356,7 @@ section#portfolio > .wrapper > input.c-selector-two:checked ~ .ff-items li:not(.
 /********************************************************/
 /*SECTION-CONTACT US***************************************/
 section#contact-us > .wrapper{}
-section#contact-us > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
+section#contact-us > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #e3a331;}
 section#contact-us > .wrapper > .row > .col > form{
 	border-top: 2px solid #ccc;
 	padding: 20px 0 0 0;
@@ -383,7 +377,7 @@ section#contact-us > .wrapper > .row > .col textarea{
 	padding: 10px 10px 0 10px;
 }
 section#contact-us > .wrapper > .row > .col input[type="submit"]{
-	background: #007FFF;
+	background: #e3a331;
 	color: #fff;
 	border:0;
 	padding: 10px 30px 10px 30px;
