@@ -17,7 +17,7 @@ label{font-size: 1rem;}
 header, section, article, footer{display: block;}
 a{color: #000; text-decoration:none; cursor: pointer;}
 .wrapper{
-	width: 1024px;
+	width: 1000px;
 	max-width: 98%;
 	margin: 0 auto;
 }
@@ -137,22 +137,41 @@ header > #main > .wrapper > nav a:hover{
 }
 #banner > .blueberry img{
 	width: 100%; 
-	opacity: 0.5; 
+	/*opacity: 0.5; */
+	margin-top: 70px;
 	height:auto;
 	max-height: 600px;
 }
-.banner-image1 h1{
+.vision h1{
 	position: absolute;
-	top: 200px;
+	top:400px;
 	left: 100px;
 	background: rgba(0, 0, 0, .8);
 	color: #fff;
 	padding: 10px 30px 10px 30px;
 }
-.banner-image1 h1:nth-child(2){
+.vision p{
 	position: absolute;
-	top: 259px;
+	top: 460px;
 	left: 146px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.mission h1{
+	position: absolute;
+	top:500px;
+	left: 400px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.mission ul{
+	list-style-type: circle;
+	font-size: medium;
+	position: absolute;
+	top: 560px;
+	left: 446px;
 	background: rgba(0, 0, 0, .8);
 	color: #fff;
 	padding: 10px 30px 10px 30px;
