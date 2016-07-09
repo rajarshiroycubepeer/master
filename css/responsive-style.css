@@ -6,9 +6,22 @@
 
 @media screen and (max-width:782px){
 	h1{font-size: 1.5rem;}
+	.vision h1{top: 420px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 459px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 520px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 559px;left: 20px;font-size: x-small;opacity: 0.7;}
+	/*.banner-image1 h1{top: 200px;left: 100px;}
+	.banner-image1 h1:nth-child(2){top: 249px;left: 135px;}
+	.banner-image1 a{top: 350px;left: 0px;}
+	.banner-image2 h1{top: 200px;right: 0px;}
+	.banner-image2 p{top: 249px;right: 0;}*/
 }
 
 @media screen and (max-width:767px){
+	.vision h1{top: 220px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 259px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 320px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 359px;left: 20px;font-size: x-small;opacity: 0.7;}
 	header > #main > .wrapper > nav span{top: -50px;}
 	/*SECTION-ABOUT-US***************************************/
 	section#about-us > .wrapper > .row > .col p{text-align: center; margin: 0 0 30px 0;}
@@ -36,11 +49,29 @@
 		top: 15px;
 		right: 35px;
 	}
+	.vision h1{top: 220px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 259px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 320px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 359px;left: 20px;font-size: x-small;opacity: 0.7;}
+	/*.banner-image1 h1{top: 100px;left: 100px;}
+	.banner-image1 h1:nth-child(2){top: 149px;left: 135px;}
+	.banner-image1 a{top: 250px;left: 0px;}
+	.banner-image2 h1{top: 100px;right: 0px;}
+	.banner-image2 p{top: 149px;right: 0;}	*/	
 }
 
 @media screen and (max-width:560px){
 	h1{font-size: 1.2rem;}
 	a{font-size: 0.8rem}
+	.vision h1{top: 220px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 259px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 320px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 359px;left: 20px;font-size: x-small;opacity: 0.7;}
+	/*.banner-image1 h1{top: 100px;left: 100px;}
+	.banner-image1 h1:nth-child(2){top: 143px;left: 128px;}
+	.banner-image1 a{top: 210px;left: 0px;}
+	.banner-image2 h1{top: 100px;right: 0px;}
+	.banner-image2 p{top: 143px;right: 0;}	*/
 
 	section#portfolio > .wrapper > label{display: block; width: 100%;}	
 	section#portfolio > .wrapper > input.c-selector-all:checked ~ .ff-items li{width: 100%}	
@@ -95,14 +126,40 @@
 @media screen and (max-width:470px){
 	h1{font-size: 0.8rem;}
 	a{font-size: 0.8rem;}
-	p{font-size: 0.8rem;}				
+	p{font-size: 0.8rem;}
+	.vision h1{top: 220px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 259px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 320px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 359px;left: 20px;font-size: x-small;opacity: 0.7;}
+	/*.banner-image1 h1{top: 100px;left: 50px;}
+	.banner-image1 h1:nth-child(2){top: 136px;left: 70px;}
+	.banner-image1 a{top: 190px;left: 0px;}
+	.banner-image2 h1{top: 100px;right: 0px;}
+	.banner-image2 p{top: 136px;right: 0;}		*/		
 }
 
 @media screen and (max-width:395px){
+	.vision h1{top: 220px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 259px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 320px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 359px;left: 20px;font-size: x-small;opacity: 0.7;}
+	/*.banner-image1 h1:nth-child(2){top: 106px;left: 20px;}
+	.banner-image1 a{top: 153px;left: 0px;}
+	.banner-image2 h1{top: 70px;right: 0px;}
+	.banner-image2 p{top: 105px;right: 0;}*/			
 }
 
 @media screen and (max-width:300px){
 	h1{font-size: 0.6rem;}
 	a{font-size: 0.6rem;}
-	p{font-size: 0.6rem;}		
+	p{font-size: 0.6rem;}
+	.vision h1{top: 180px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.vision p{top: 209px;left: 20px;font-size: x-small;opacity: 0.7;}
+	.mission h1{top: 320px;left: 0px;font-size: x-small;opacity: 0.7;}
+	.mission ul{top: 359px;left: 20px;font-size: x-small;opacity: 0.7;}
+	/*.banner-image1 h1{top: 60px;left: 0px;}
+	.banner-image1 h1:nth-child(2){top: 92px;left: 15px;}
+	.banner-image1 a{top: 127px;left: 0px;}
+	.banner-image2 h1{top: 60px;right: 0px;}
+	.banner-image2 p{top: 90px;right: 0;}	*/		
 }

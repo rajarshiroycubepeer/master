@@ -3,7 +3,7 @@
 /*IMPORT-12-COLUMN-RESPONSIVE-GS*/
 @import url("responsive.gs.12col.css");
 body{
-	font-family:'Open Sans',Helvetica,Arial,sans-serif;
+	font-family: verdana, tahoma, sans-serif, arial;
 	font-size: 2em;
 }
 h1{font-size: 2rem;}
@@ -17,8 +17,8 @@ label{font-size: 1rem;}
 header, section, article, footer{display: block;}
 a{color: #000; text-decoration:none; cursor: pointer;}
 .wrapper{
-	width: 1024px;
-	max-width: 70%;
+	width: 1000px;
+	max-width: 98%;
 	margin: 0 auto;
 }
 
@@ -123,18 +123,98 @@ header > #main > .wrapper > nav ul li{
   margin: 0 0 0 10px;
 }
 header > #main > .wrapper > nav a:hover{
-  color: #e3a331;
-  text-decoration: none;
+  color: #007FFF;
+  text-decoration: underline;
 }
-
+/********************************************************/
+/*BANNER***************************************/
+#banner > .blueberry{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;		
+	background: #000;
+	max-height: 600px;	
+}
+#banner > .blueberry img{
+	width: 100%; 
+	/*opacity: 0.5; */
+	margin-top: 70px;
+	height:auto;
+	max-height: 600px;
+}
+.vision h1{
+	position: absolute;
+	top:400px;
+	left: 100px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.vision p{
+	position: absolute;
+	top: 460px;
+	left: 146px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.mission h1{
+	position: absolute;
+	top:500px;
+	left: 400px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.mission ul{
+	list-style-type: circle;
+	font-size: medium;
+	position: absolute;
+	top: 560px;
+	left: 446px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.banner-image1 a{
+	position: absolute;
+	top: 400px;
+	left: 400px;
+	background: #007FFF;
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: background, 0.3s, ease-in-out;
+}
+.banner-image1 a:hover{
+	background: #fff;
+	color: #333;
+}
+.banner-image2 h1{
+	position: absolute;
+	top: 200px;
+	right: 0px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
+.banner-image2 p{
+	position: absolute;
+	top: 259px;
+	right: 0;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+}
 /****************************************************/
 /*SECTION***************************************/
 section{background: #fff; color: #000;}
 section > .wrapper li{display: inline;}
 
 /*SECTION-ABOUT US***************************************/
-section#about-us, section#business, section#services, section#portfolio, section#contact-us{padding:135px 0 100px 0;}
-section#about-us:target, section#business{padding: 135px 0 100px 0;}
+section#about-us, section#team, section#services, section#portfolio, section#contact-us{padding:135px 0 100px 0;}
+section#about-us:target, section#team{padding: 135px 0 100px 0;}
 section#about-us{
 	background-color: #e3a331;
 	color: #fff;
@@ -157,24 +237,24 @@ section#about-us > .wrapper > .col a:hover > img{
 }
 section:nth-child(odd){background: #EFEFEF;}
 /********************************************************/
-/*SECTION-business***************************************/
-section#business > .wrapper h2{
+/*SECTION-TEAM***************************************/
+section#team > .wrapper h2{
 	text-align: center; 
 	margin: 0 0 20px 0; 
-	color: #e3a331;
+	color: #007FFF;
 }
-section#business > .wrapper > .col, section#business > .wrapper .col h5, 
-section#business > .wrapper > .col h3, section#business > .wrapper .col ul{margin: 5px 0 5px 0;}
-section#business > .wrapper > .col img.business{
+section#team > .wrapper > .col, section#team > .wrapper .col h5, 
+section#team > .wrapper > .col h3, section#team > .wrapper .col ul{margin: 5px 0 5px 0;}
+section#team > .wrapper > .col img.team{
 	width: 170px; 
 	height: 120px; 
 	border-radius: 50%; 
 	box-shadow:  2px 2px 3px 0 rgba(0, 0, 0, .2);
 }
-section#business > .wrapper .col ul{margin: 20px 0 0 0;}
+section#team > .wrapper .col ul{margin: 20px 0 0 0;}
 /********************************************************/
 /*SECTION-SERVICES***************************************/
-section#services > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #e3a331;}
+section#services > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
 p.quotes{text-align:center; background-color: antiquewhite ;font-style: italic;margin: 20px 0 20px 0;}
 p.quotes:before, p.quotes:after {content: '"';}
 section#services > .wrapper > .col .span_3{text-align: center;}
@@ -189,7 +269,7 @@ section#services > .wrapper > .col img{
 /****************************************************/
 /*SECTION-PORTFOLIO***************************************/
 section#portfolio > .wrapper{text-align: center;}
-section#portfolio > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #e3a331;}
+section#portfolio > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
 .clr{clear: both;}
 section#portfolio > .wrapper > label{
 	width: 20%;
@@ -208,7 +288,7 @@ section#portfolio > .wrapper > label.label-two{border-radius: 0px 1px 1px 0px;}
 section#portfolio > .wrapper > input.c-selector-all:checked ~ label.label-all,
 section#portfolio > .wrapper > input.c-selector-one:checked ~ label.label-one,
 section#portfolio > .wrapper > input.c-selector-two:checked ~ label.label-two{
-	background: #e3a331;
+	background: #007FFF;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
@@ -356,7 +436,7 @@ section#portfolio > .wrapper > input.c-selector-two:checked ~ .ff-items li:not(.
 /********************************************************/
 /*SECTION-CONTACT US***************************************/
 section#contact-us > .wrapper{}
-section#contact-us > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #e3a331;}
+section#contact-us > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
 section#contact-us > .wrapper > .row > .col > form{
 	border-top: 2px solid #ccc;
 	padding: 20px 0 0 0;
@@ -377,7 +457,7 @@ section#contact-us > .wrapper > .row > .col textarea{
 	padding: 10px 10px 0 10px;
 }
 section#contact-us > .wrapper > .row > .col input[type="submit"]{
-	background: #e3a331;
+	background: #007FFF;
 	color: #fff;
 	border:0;
 	padding: 10px 30px 10px 30px;
