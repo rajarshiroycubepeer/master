@@ -7,17 +7,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link rel="shortcut icon" type="image/x-icon" href="images/head-logo.ico" />
 	<link rel="stylesheet" media="all" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/responsive-style.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" type="text/css" href="css/responsive-style.css">	
+	<link rel="stylesheet" href="css/blueberry.css" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.blueberry.js"></script>
+	<script type="text/javascript" src="js/jquery.blueberry-load.js"></script>
 	<script type="text/javascript" src="js/back-to-top.js"></script>		
 </head>
 <body>
 	<header>	
+		<!-- <div class="top">
+			<div class="wrapper">
+				<ul>
+					<li><a href="#"><img src="images/gplus-icon.png" alt="Google Plus"></a></li>
+					<li><a href="#"><img src="images/pinterest-icon.png" alt="Pinterest"></a></li>
+					<li><a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a></li>			
+					<li><a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a></li>					
+				</ul>		
+			</div>
+		</div> -->
 		<div id="main">
 			<div class="wrapper row">
-				<div class="logo col span_4"><a href="Shriram Enterprises.html"><img src="images/ShriRamLogo.png" alt="Azure"></a></div>
-				<nav class="col span_8">
+				<div class="logo col span_4"><a href="index.html"><img src="images/ShriRamLogo.png" alt="Azure"></a></div>
+				<nav class="col span_7">
 					<span onclick="openNav()">
 						<div class="bar-1"></div>
 						<div class="bar-1"></div>
@@ -27,90 +39,89 @@
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 						<div class="overlay-content">
 							<ul id="menu-nav">
-								<li><a href="#">Home</a></li>
-								<li><a href="#services">Associates</a></li>
-								<li><a href="#business">Bussiness Unit</a></li>
-								<li><a href="#portfolio">Clients</a></li>
+								<li><a href="#">HOME</a></li>
 								<li><a href="#about-us">About Us</a></li>
-								<li><a href="#contact-us">Contact Us</a></li>
+								<li><a href="#team">Bussiness Unit</a></li>
+								<li><a href="#services">Associates</a></li>
+								<li><a href="#portfolio">Clients</a></li>
+								<li><a href="#contact-us">CONTACT US</a></li>
 							</ul>
 						</div>
 					</div>
 					<ul id="main-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#services">Associates</a></li>
-						<li><a href="#business">Bussiness Unit</a></li>
-						<li><a href="#portfolio">Clients</a></li>
+						<li><a href="#">HOME</a></li>
 						<li><a href="#about-us">About Us</a></li>
-						<li><a href="#contact-us">Contact Us</a></li>
+						<li><a href="#team">Bussiness Unit</a></li>
+						<li><a href="#services">Associates</a></li>
+						<li><a href="#portfolio">Clients</a></li>
+						<li><a href="#contact-us">CONTACT US</a></li>
 					</ul>	
 				</nav>	
 			</div>
 		</div>	
 	</header>
 	<div id="banner">
-	        <img src="images/img1.jpg" alt="banner 1"> 
-	</div>
-	<section id="services">
-		<div class="wrapper row">
-			<h2>Associates</h2>
-			<p class="quotes">Two minds are better then one. That's why we are with our associates too serve you.</p>
-			
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/abb.png" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
+		<div class="blueberry">
+	        <!--<ul class="slides">-->
+	          <li><img src="images/homeLogo.png" alt="banner 1">
+	          	<div class="">
+	          		<div class="vision">
+	          			<h1>&quot;Our Vision&quot;</h1>
+	          			<p>To be one of the most-admired and preferred technological solutions</p>
+	          		</div>
+	          		<div class="mission">
+	          			<h1>&quot;Our Mission&quot;</h1>
+	          			<ul>
+	          				<li>Provide absolute technological solutions to our clients across industries and demography.</li>
+	          				<li>Build capabilities & competencies in technological field to develop solutions for various industries.</li>
+	          				<li>Introducing new technologies to the clients to improve their productivity.</li>
+	          			</ul>
+	          		</div>	
+	          	</div>
+	          </li>
+		</div>
+	</div>		
+	<section id="about-us">
+		<div class="wrapper">
+			<h2>ABOUT US</h2>
+			<div class="row gutters">	
+				<!-- <div class="col span_3">
+					<a href="#"><img src="images/icon1.png" alt="Easy Costumize">
+					<h4>EASY<br/>COSTUMIZE</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p></a>
 				</div>	
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-				<div class="col span_2 row gutters">
-					<div class="col span_12"><img src="images/associates/" alt="image"></div>			
-				</div>
-			
+				<div class="col span_3">
+					<a href="#"><img src="images/icon2.png" alt="Responsive Design">				
+					<h4>RESPONSIVE<br/>DESIGN</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p></a>
+				</div>	
+				<div class="col span_3">
+					<a href="#"><img src="images/icon3.png" alt="Fully Documented">					
+					<h4>FULLY<br/>DOCUMENTED</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p></a>
+				</div>	
+				<div class="col span_3">
+					<a href="#"><img src="images/icon4.png" alt="Excellent Features">					
+					<h4>EXCELLENT<br/>FEATURES</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p></a>
+				</div> -->
+				<p>
+					Shriram Enterprises is founded in Bhilai, Chhattisgarh (India), the land known for its highest industrial density. The organization operates across multiple industries including Steel, Cement, Power, Construction and Healthcare. We are one among the fastest growing organisation in Chhattisgarh with an unimaginable year on year growth rate of 48%, which become possible for us to achieve only because of our highly customer centric approach and dedicated work force for every industry
+				</p>
+				<p>
+					Shriram Enterprises has been established on three basis pillars that is Read, Research and Remit. Our approach of problem solving is very systematic. We believe in understanding a problem (Read), than we do a proper research on how to solve it (Research) and at the last we propose the solutions to the concern organization (Remit).
+				</p>
+				<p>
+					Our team is highly qualified and experienced enough to go deep into the problem and come up with a solution. It's our understanding that the time has always been a limited resource for anyone in this world, so for us too. Timely delivery of solutions to our clients is always on our priority.
+
+				</p>
+				<p>
+					Our quality products, path-breaking delivery schedule, adaptive approach and a fair business practice are all to imprint a memorable experience to our clients. Our endeavour is to deliver simple yet robust solutions to all the associated clients and help them to reduce complexity and enable flexible, agile and safe service delivery.
+				</p>										
+			</div>	
 		</div>
 	</section>	
-	<section id="business">
+	<section id="team">
 		<div class="wrapper row">
 			<h2>Business Unit</h2>	
 			<div class="col span_4">
@@ -119,8 +130,7 @@
 				<h3>Instrumentation : </h3>
 				<ul>
 					<li><p>Pressure gauge & Pressure switches</p></li>
-					<li><p>Temperature gauges & Temperature</p></li>
-					<li><p>Switches</p></li>
+					<li><p>Temperature gauges & Temperature switches</p></li>
 					<li><p>Level gauge & Level switches</p></li>
 					<li><p>Solenoid Valve</p></li>
 					<li><p>Rotameters</p></li>
@@ -172,16 +182,89 @@
 			</div>								
 		</div>	
 	</section>
+	<section id="services">
+		<div class="wrapper row">
+			<h2>Associates</h2>
+			<p class="quotes">Two minds are better then one. That's why we are with our associates too serve you.</p>
+			
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/abb.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/3m.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Alliance Transfusio.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Bard medical.jpg" alt="image"></div>			
+				</div>	
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/bellcross.gif" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Bosch.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/chemtrols.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Chino.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/emerson.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/GEhealthcare.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Hemocue.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/IKA.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/index.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/indfos.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Kimberly clark.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Masibus.jpg" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Minvasys.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/moistTech.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/Phillips.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/SiemensRecruitment.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/sirona.png" alt="image"></div>			
+				</div>
+				<div class="col span_2 row gutters">
+					<div class="col span_12"><img src="images/associates/VWR.png" alt="image"></div>			
+				</div>
+		</div>
+	</section>	
 	<section id="portfolio">
 		<div class="wrapper">
 			<h2>Clients</h2>
 			<p class="quotes">When you are delighted with our work, We are delighted.</p>
 			<input name="radio-set-1" type="radio" checked="checked" id="selector-all" class="c-selector-all">
-			<label for="selector-all" class="label-all">All</label>
-
+			<label for="selector-all" class="label-all">All</label>		
+			
 			<input name="radio-set-1" type="radio" id="selector-one" class="c-selector-one">
-			<label for="selector-one" class="label-one">Engineering Client</label>
-
+			<label for="selector-one" class="label-one">Engineering Client</label>	
+			
 			<input name="radio-set-1" type="radio" id="selector-two" class="c-selector-two">
 			<label for="selector-two" class="label-two">Health Care</label>
 			<div class="clr"></div>
@@ -333,27 +416,7 @@
 			</ul>
 		</div>
 		<div class="clr"></div>
-	</section>
-	<section id="about-us">
-		<div class="wrapper">
-			<h2>ABOUT US</h2>
-			<div class="row gutters">	
-				<p>
-					Shriram Enterprises is founded in Bhilai, Chhattisgarh (India), the land known for its highest industrial density. The organization operates across multiple industries including Steel, Cement, Power, Construction and Healthcare. We are one among the fastest growing organisation in Chhattisgarh with an unimaginable year on year growth rate of 48%, which become possible for us to achieve only because of our highly customer centric approach and dedicated work force for every industry
-				</p>
-				<p>
-					Shriram Enterprises has been established on three basis pillars that is Read, Research and Remit. Our approach of problem solving is very systematic. We believe in understanding a problem (Read), than we do a proper research on how to solve it (Research) and at the last we propose the solutions to the concern organization (Remit).
-				</p>
-				<p>
-					Our team is highly qualified and experienced enough to go deep into the problem and come up with a solution. It's our understanding that the time has always been a limited resource for anyone in this world, so for us too. Timely delivery of solutions to our clients is always on our priority.
-
-				</p>
-				<p>
-					Our quality products, path-breaking delivery schedule, adaptive approach and a fair business practice are all to imprint a memorable experience to our clients. Our endeavour is to deliver simple yet robust solutions to all the associated clients and help them to reduce complexity and enable flexible, agile and safe service delivery.
-				</p>										
-			</div>	
-		</div>
-	</section>
+	</section>	
 	<section id="contact-us">
 		<div class="wrapper">
 			<h2>CONTACT US</h2>
@@ -367,6 +430,14 @@
 					<p>Chattisgarh, India</p>
 					<p>Phone:0788-4035307</p>
 					<p>Email:manoj.shriramenterrprises@hotmail.com</p>
+							
+					<!-- <form action="#">		
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="text" name="phone" placeholder="Phone" required>
+						<textarea name="message" placeholder="Message..."></textarea>
+						<input type="submit" name="btnSubmit" value="Send">
+					</form> -->
 				</div>	
 			</div>	
 		</div>
@@ -380,8 +451,10 @@
 			<div class="right col span_6">
 				<p>2016 All Rights Reserved</p>
 				<ul>
-					<li><a href="https://mail.google.com/mail/cubepeer" target="_blank"><img src="images/gplus-icon.png" alt="Google Plus"></a></li>
-					<li><a href="https://www.facebook.com/raja499" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a></li>					
+					<li><a href="#"><img src="images/gplus-icon.png" alt="Google Plus"></a></li>
+					<li><a href="#"><img src="images/pinterest-icon.png" alt="Pinterest"></a></li>
+					<li><a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a></li>					
+					<li><a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a></li>		
 				</ul>
 			</div>	
 		</div>	
