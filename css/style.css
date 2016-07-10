@@ -263,7 +263,7 @@ section#services > .wrapper > .col img{
 	width: 70%;
 	height: 50px;
 	margin: 20px 0 0 0;
-	border-radius: 70%;
+	/*border-radius: 70%;*/
 	box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
 }
 /****************************************************/
@@ -504,3 +504,137 @@ footer > .wrapper > .col li{
 	display: inline;
 	margin: 0 0 0 10px;
 }
+
+
+
+
+/**********Tabs css************/
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+main div.businessTabRow > div{
+	font-size: small;
+	display:list-item;
+	margin-left: 1.3em;
+  	list-style-type: circle; 
+}
+
+main p.businessTab {
+  margin: 0 0 20px;
+  line-height: 1.5;
+  font-family: serif;
+}
+
+main ul.businessTab{
+	font-size: smaller;
+}
+
+main > section {
+  display: none;
+  padding: 20px 0 0;
+  border: 1px solid #ddd;
+}
+
+main > input {
+  display: none;
+}
+
+main > label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+main > label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+main > label[for*='1']:before {
+  content: '\f1cb';
+}
+
+main > label[for*='2']:before {
+  content: '\f17d';
+}
+
+main > label[for*='3']:before {
+  content: '\f16b';
+}
+
+main > label[for*='4']:before {
+  content: '\f1a9';
+}
+
+main > label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+main > input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3{
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  main > label {
+    display: none;
+  }
+#content1,
+#content2,
+#content3{
+  display: block;
+  width: 100%;
+}
+}
+@media screen and (max-width: 400px) {
+  main > label {
+    display: none;
+  }
+#content1,
+#content2,
+#content3{
+  display: block;
+  width: 100%;
+}
+}
+
+/******tooltip********/
+
+/*main label.tooltip {outline:none; }
+main label.tooltip strong {line-height:30px;}
+main label.tooltip:hover {text-decoration:none;} 
+main label.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:300px; line-height:16px;
+}
+main label.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+    
+main label.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}*/
