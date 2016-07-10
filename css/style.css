@@ -123,7 +123,7 @@ header > #main > .wrapper > nav ul li{
   margin: 0 0 0 10px;
 }
 header > #main > .wrapper > nav a:hover{
-  color: #007FFF;
+  color: #FFA500;
   text-decoration: underline;
 }
 /********************************************************/
@@ -180,7 +180,7 @@ header > #main > .wrapper > nav a:hover{
 	position: absolute;
 	top: 400px;
 	left: 400px;
-	background: #007FFF;
+	background: #FFA500;
 	color: #fff;
 	padding: 10px 30px 10px 30px;
 	border-radius: 4px;
@@ -241,7 +241,7 @@ section:nth-child(odd){background: #EFEFEF;}
 section#team > .wrapper h2{
 	text-align: center; 
 	margin: 0 0 20px 0; 
-	color: #007FFF;
+	color: #FFA500;
 }
 section#team > .wrapper > .col, section#team > .wrapper .col h5, 
 section#team > .wrapper > .col h3, section#team > .wrapper .col ul{margin: 5px 0 5px 0;}
@@ -254,7 +254,7 @@ section#team > .wrapper > .col img.team{
 section#team > .wrapper .col ul{margin: 20px 0 0 0;}
 /********************************************************/
 /*SECTION-SERVICES***************************************/
-section#services > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
+section#services > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #FFA500;}
 p.quotes{text-align:center; background-color: antiquewhite ;font-style: italic;margin: 20px 0 20px 0;}
 p.quotes:before, p.quotes:after {content: '"';}
 section#services > .wrapper > .col .span_3{text-align: center;}
@@ -269,7 +269,7 @@ section#services > .wrapper > .col img{
 /****************************************************/
 /*SECTION-PORTFOLIO***************************************/
 section#portfolio > .wrapper{text-align: center;}
-section#portfolio > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
+section#portfolio > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #FFA500;}
 .clr{clear: both;}
 section#portfolio > .wrapper > label{
 	width: 20%;
@@ -288,7 +288,7 @@ section#portfolio > .wrapper > label.label-two{border-radius: 0px 1px 1px 0px;}
 section#portfolio > .wrapper > input.c-selector-all:checked ~ label.label-all,
 section#portfolio > .wrapper > input.c-selector-one:checked ~ label.label-one,
 section#portfolio > .wrapper > input.c-selector-two:checked ~ label.label-two{
-	background: #007FFF;
+	background: #FFA500;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
@@ -436,7 +436,7 @@ section#portfolio > .wrapper > input.c-selector-two:checked ~ .ff-items li:not(.
 /********************************************************/
 /*SECTION-CONTACT US***************************************/
 section#contact-us > .wrapper{}
-section#contact-us > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #007FFF;}
+section#contact-us > .wrapper h2{text-align: center; margin: 0 0 20px 0; color: #FFA500;}
 section#contact-us > .wrapper > .row > .col > form{
 	border-top: 2px solid #ccc;
 	padding: 20px 0 0 0;
@@ -457,7 +457,7 @@ section#contact-us > .wrapper > .row > .col textarea{
 	padding: 10px 10px 0 10px;
 }
 section#contact-us > .wrapper > .row > .col input[type="submit"]{
-	background: #007FFF;
+	background: #FFA500;
 	color: #fff;
 	border:0;
 	padding: 10px 30px 10px 30px;
