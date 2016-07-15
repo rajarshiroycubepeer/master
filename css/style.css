@@ -122,6 +122,9 @@ header > #main > .wrapper > nav ul li{
   font-weight: bold;
   margin: 0 0 0 10px;
 }
+header > #main > .wrapper > nav ul li.active{
+  	text-decoration: underline;
+}
 header > #main > .wrapper > nav a:hover{
   color: #FFA500;
   text-decoration: underline;
@@ -214,6 +217,9 @@ section > .wrapper li{display: inline;}
 
 /*SECTION-ABOUT US***************************************/
 section#about-us, section#team, section#services, section#portfolio, section#contact-us{padding:135px 0 100px 0;}
+a:active + li{
+    background-color: yellow;
+}
 section#about-us:target, section#team{padding: 135px 0 100px 0;}
 section#about-us{
 	background-color: #e3a331;
@@ -265,6 +271,17 @@ section#services > .wrapper > .col img{
 	margin: 20px 0 0 0;
 	/*border-radius: 70%;*/
 	box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.associatesDiv1 {
+	
+    box-sizing: border-box;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.associatesP{
+	font-weight: bold;
+	text-align: center;
+	background-color:lightgrey;
 }
 /****************************************************/
 /*SECTION-PORTFOLIO***************************************/
@@ -538,6 +555,7 @@ main > section {
   display: none;
   padding: 20px 0 0;
   border: 1px solid #ddd;
+  background-color: #EFEFEF;
 }
 
 main > input {
