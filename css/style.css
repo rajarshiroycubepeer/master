@@ -141,43 +141,51 @@ header > #main > .wrapper > nav a:hover{
 #banner > .blueberry img{
 	width: 100%; 
 	/*opacity: 0.5; */
-	margin-top: 70px;
+	margin-top: 60px;
 	height:auto;
 	max-height: 600px;
 }
 .vision h1{
+	border-radius: 25px;
 	position: absolute;
-	top:400px;
+	top:150px;
+	left: 50px;
+	background: rgba(0, 0, 0, .8);
+	color: #fff;
+	padding: 10px 30px 10px 30px;
+	opacity: 0.5;
+}
+.vision p{
+	border-radius: 20px;
+	position: absolute;
+	top: 210px;
 	left: 100px;
 	background: rgba(0, 0, 0, .8);
 	color: #fff;
 	padding: 10px 30px 10px 30px;
-}
-.vision p{
-	position: absolute;
-	top: 460px;
-	left: 146px;
-	background: rgba(0, 0, 0, .8);
-	color: #fff;
-	padding: 10px 30px 10px 30px;
+	opacity: 0.5;
 }
 .mission h1{
+	border-radius: 25px;
 	position: absolute;
 	top:500px;
-	left: 400px;
+	left: 650px;
 	background: rgba(0, 0, 0, .8);
 	color: #fff;
 	padding: 10px 30px 10px 30px;
+	opacity: 0.5;
 }
 .mission ul{
+	border-radius: 20px;
 	list-style-type: circle;
 	font-size: medium;
 	position: absolute;
 	top: 560px;
-	left: 446px;
+	left: 700px;
 	background: rgba(0, 0, 0, .8);
 	color: #fff;
 	padding: 10px 30px 10px 30px;
+	opacity: 0.5;
 }
 .banner-image1 a{
 	position: absolute;
