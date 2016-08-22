@@ -228,7 +228,7 @@ section#about-us, section#team, section#services, section#portfolio, section#con
 a:active + li{
     background-color: yellow;
 }
-section#about-us:target, section#team{padding: 135px 0 100px 0;}
+/*section#about-us:target, section#team{padding: 135px 0 100px 0;}*/
 section#about-us{
 	background-color: #e3a331;
 	color: #fff;
