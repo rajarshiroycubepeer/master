@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<meta http-equiv="Cache-control" content="public">
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+<script type = "text/javascript">
+
+	function initCompleteFunction(){
+		var oTable = $('#example').DataTable();
+        	redrawTable(oTable);
+		$(".deleteProfile").click(function(el){
+			console.log(el);
+			var href = el.currentTarget.href.split("#")[1];
+			var paramObj = href.replace('?','').split('&').reduce(function(s,c){
+				var t=c.split('=');
+				s[t[0]]=t[1];
+				return s;
+			},{})
+			console.log(paramObj);
+			$.ajax({
+			  	url: "addVacancy.php",
+				data: {
+				  operation:"deleteProfile",
+				  id: paramObj.id,
+				  fileName:paramObj.fileName
+				},
+				type: "GET"
+			}).done(function( json ) {
+				console.log(json);
+			        window.location.hash = "";
+			        oTable.ajax.reload(function(){
+			        	initCompleteFunction();  		
+			        });
+			        }).fail(function(xhr, status, errorThrown){
+			         	console.log(errorThrown);        	  	
+			        });
+			});
+	}
+	function redrawTable(oTable){
+			var rows = $(oTable.rows().nodes());
+			for(i=0;i<rows.length;i++){
+			  var row = rows[i].cells;
+			  var fileName = $(row[4]).html();
+			  var deleteId = $(row[5]).html();
+			  $(row[4]).html("<a href='http://shrirament.com/resumes/"+fileName+"'>"+ fileName +"</a>");
+			  $(row[5]).html("<a class='deleteProfile' href='#id="+deleteId+"&fileName="+fileName+"'> Delete </a>")
+			}
+	}
+	$(document).ready(function(){
+		var oTable = $('#example').DataTable({
+        		"ajax": {
+        			"url": "addVacancy.php",
+        			"dataSrc": "",
+				"type": "GET",
+				"data": { "operation":"getAllProfiles" } 
+        		},
+        		"columns": [
+		            { "data": "firstName" },
+		            { "data": "lastName" },
+		            { "data": "email" },
+		            { "data": "mobile" },
+		            { "data": "fileName" },
+		            { "data": "id" }
+        		],
+        		"initComplete": function(settings, json) {
+        			initCompleteFunction();
+			}
+    		});
+	});
+</script>
+<body>
+<div id="banner"><a href="http://shrirament.com"><img src="images/ShriRamLogo.png" alt="Azure" style="width: 204px;height: 80px;"></a></div>
+
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>File Name</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+</table>
+</body>
+</html>

@@ -13,12 +13,12 @@ $(document).ready(function() {
 
 		if(screen.width>1024){
 			var windscroll = $(window).scrollTop();
-			console.log("windscroll : "+windscroll);
+			//console.log("windscroll : "+windscroll);
     		if (windscroll >= 100) {
     			var navIndex = 0;
 				for(var i=0; i<sec.length; i++){
 				    //console.log(sec[i].id);
-				    if(['about-us','team','services','portfolio','contact-us'].includes(sec[i].id)){
+				    if(['about-us','team','services','portfolio', 'Careers','contact-us'].includes(sec[i].id)){
 				        
 				        if ($(sec[i]).position().top <= windscroll) {
 

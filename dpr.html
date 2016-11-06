@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<meta http-equiv="Cache-control" content="public">
+<html lang="en">
+<head>
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+<link href="css/jquery-1.10.4-ui.css" rel="stylesheet">
+<link href="css/dpr.css" rel="stylesheet">
+
+<script src="js/jquery-1.10.4-ui.js"></script>
+
+      <!-- CSS -->
+      <style>
+         .ui-widget-header,.ui-state-default, ui-button{
+            background:#6dc7cd;
+            border: 1px solid #6dc7cd;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+         #loading {
+		 background: url("images/loading.png") center;
+		 opacity: 0.8;
+		 cursor:auto;
+		 width: 100%;
+		 height: 100%;
+		 z-index:15;
+		
+		 /* Positioning */
+		 position: absolute;
+		 left: 0;
+		 top: 0;
+		 background-color: #efe9e9;
+		 background-repeat: no-repeat;
+		 display:none;
+	}
+      </style>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+<script type="text/javascript" language="javascript" src="js/jquery.datetimepicker.full.js"></script>
+
+</head>
+<body>
+<div id="loading"></div>
+<div id="banner"><a href="http://shrirament.com"><img src="images/ShriRamLogo.png" alt="Azure" style="width: 204px;height: 80px;"></a></div>
+<form action="#" style="background-color: #f4f6f7;">
+
+  <!--<header>
+
+    <h2>DPR Form</h2>
+    <div>Please add relevant information on daily basis.</div>
+    
+  </header>
+  -->
+  <div>
+    <label class="desc" id="title1" for="Field1">Project Location</label>
+    <div>
+      <!--<input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">-->
+      <select id="projectLocation">
+		  <option value="pkg-61">PKG- 61</option>
+		  <option value="pkg-64">PKG- 64</option>
+		  <option value="acc">ACC</option>
+		  <option value="nagarNar">NMDC Nagar-Nar</option>
+     </select>
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title2" for="Field3">
+      In Timing
+    </label>
+    <div>
+      <!--<input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> -->
+      <input type="text" value="" id="datetimepickerIn"/>
+   </div>
+  </div>
+  
+  <div>
+    <label class="desc" id="title3" for="Field3">
+      Out Timing
+    </label>
+    <div>
+      <!--<input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> -->
+      <input type="text" value="" id="datetimepickerOut"/>
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title4" for="Field4">
+      Description of Work:
+    </label>
+  
+    <div>
+      <!--<textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>-->
+      <textarea name="description" id="description" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title5" for="Field4">
+      Measurement:
+    </label>
+  
+    <div>
+      <!--<textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>-->
+      <textarea name="measurement" id="measurement" rows="10" cols="50" tabindex="4"></textarea>  
+    </div>
+  </div>  
+    
+  <div>
+    <fieldset>
+    
+      <legend id="title6" class="desc">
+        Manpower Allotment:
+      </legend>
+      
+      <div>
+      	<div>
+      		
+      		<input type="text" id="supervisor" placeholder="Supervisor">
+      		<label class="choice" for="Field5_0">Supervisor</label>
+      	</div>
+        <div>
+        	<input type="text" id="fitter" placeholder="Fitter">
+        	<label class="choice" for="Field5_1">Fitter</label>
+        </div>
+        <div>
+        	<input type="text" id="welder" placeholder="Welder">
+        	<label class="choice" for="Field5_2">Welder</label>
+        </div>
+        <div>
+        	<input type="text" id="helper" placeholder="Helper">
+        	<label class="choice" for="Field5_2">Helper</label>
+        </div>
+        <div>
+        	<input type="text" id="rigger" placeholder="Rigger">
+        	<label class="choice" for="Field5_2">Rigger</label>
+        </div>
+        <div>
+        	<input type="text" id="electrician" placeholder="Electrician">
+        	<label class="choice" for="Field5_2">Electrician</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  
+  <div>
+    <label class="desc" id="title7" for="Field4">
+      Remarks:
+    </label>
+  
+    <div>
+      <!--<textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>-->
+      <textarea name="remarks" id="remarks" rows="10" cols="50" tabindex="4"></textarea>  
+    </div>
+  </div>  
+  
+  <div>
+  <div>
+  	<input id="saveForm" name="saveForm" type="button" value="Submit">
+  	<input type="reset" value="Reset" id="reset">
+  </div>
+  </div>
+  
+</form>
+
+<div>
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Update/Delete</th>
+                <th>Location</th>
+                <th>Timing In</th>
+                <th>Timing Out</th>
+                <th>Description</th>
+                <th>Measurement</th>
+                <th>Supervisor</th>
+                <th>Fitter</th>
+                <th>Welder</th>
+                <th>Helper</th>
+                <th>Rigger</th>
+                <th>Electrician</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+</table>
+</div>
+<div id="delete-dialog" title="Delete DPR">
+	These DPR will be permanently deleted and cannot be recovered. 
+	Are you sure?
+	If Yes, Please enter Passcode : <input type='text' id='passcode' placeholder='Passcode'>
+</div>
+</body>
+
+<script>
+	$.datetimepicker.setLocale('en');
+	var d = new Date();
+	var date = d.getFullYear()+"/"+d.getMonth()+"/"+d.getDate();
+	$('#datetimepickerIn, #datetimepickerOut').datetimepicker({
+		dayOfWeekStart : 1,
+		lang:'en',
+		disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
+		startDate:date
+	});
+	var time = d.getHours()+":"+d.getMinutes();
+	var dateTime = date+" "+time;
+	$('#datetimepickerIn, #datetimepickerOut').datetimepicker({value:dateTime,step:10});
+	
+	$('.some_class').datetimepicker();
+	
+	
+	function initCompleteFunction(){
+		var oTable = $('#example').DataTable();
+        	redrawTable(oTable);
+		$(".deleteUpdateDpr").click(function(el){
+			var href = el.currentTarget.href.split("#")[1];
+			var paramObj = href.replace('?','').split('&').reduce(function(s,c){
+				var t=c.split('=');
+				s[t[0]]=t[1];
+				return s;
+			},{})
+			paramObj['oTable'] = oTable;
+			deleteUpdateOperation(paramObj, el)
+		});
+	}
+	function redrawTable(oTable){
+			var rows = $(oTable.rows().nodes());
+			for(i=0;i<rows.length;i++){
+			  var row = rows[i].cells;
+			  var id = $(row[0]).html();
+			  $(row[0]).html("<a class='deleteUpdateDpr' href='#id="+id+"&operation=deleteDpr'> Delete </a>--<a class='deleteUpdateDpr' href='#id="+id+"&operation=updateDpr'> Update </a>")
+			}
+	}
+	
+	function deleteUpdateOperation(paramObj, el){
+			if(paramObj.operation==="deleteDpr"){
+				$("#delete-dialog").data('paramObj', paramObj).dialog( "open" );
+				
+			}
+			if(paramObj.operation==="updateDpr"){
+				$(el.target.parentElement.parentElement).each(function (i, el) {
+				        var $tds = $(this).find('td');
+				        console.log($tds.eq(12).text());
+				        $("#projectLocation option").removeAttr('selected').filter('[value='+$tds.eq(1).text()+']').attr('selected', 'selected');
+				        $("#datetimepickerIn").val($tds.eq(2).text());
+				        $("#datetimepickerOut").val($tds.eq(3).text());
+				        $("#description").val($tds.eq(4).text());
+				        $("#measurement").val($tds.eq(5).text());
+				        $("#supervisor").val($tds.eq(6).text());
+				        $("#fitter").val($tds.eq(7).text());
+				        $("#welder").val($tds.eq(8).text());
+				        $("#helper").val($tds.eq(9).text());
+				        $("#rigger").val($tds.eq(10).text());
+				        $("#electrician").val($tds.eq(11).text());
+				        $("#remarks").val($tds.eq(12).text());
+				        $("#saveForm").val("Update");
+				        $("#saveForm").attr("Update-id",$($tds[0].innerHTML.split("--")[0])[0].href.split("#")[1].split("&")[0].split("=")[1]);
+				        
+				});
+			}
+	}
+	
+	$(document).ready(function() {
+		var oTable = $('#example').DataTable({
+        		"ajax": {
+        			"url": "dpr.php",
+				"type": "GET",
+				"dataSrc": "",
+				"data": { "operation":"getAllDpr" } 
+        		},
+        		"scrollX": true,
+        		"columns": [
+        		    { "data": "id" },	
+		            { "data": "location" },
+		            { "data": "timingIn" },
+		            { "data": "timingOut" },
+		            { "data": "description" },
+		            { "data": "measurement" },
+		            { "data": "supervisor" },
+		            { "data": "fitter" },
+		            { "data": "welder" },
+		            { "data": "helper" },
+		            { "data": "rigger" },
+		            { "data": "electrician" },
+		            { "data": "remarks" }
+        		],
+        		"initComplete": function(settings, json) {
+        			initCompleteFunction();
+			}
+    		});
+	} );
+	
+	$("#reset").click(function(){
+		$("#saveForm").val("Submit");
+		$("#saveForm").removeAttr("Update-id");
+		window.location.hash = "";
+	});
+	
+	$("#saveForm").click(function(){
+		$("#loading").show();
+		$("#loading").height($(document).height());
+		var projectLocation = $("#projectLocation option:checked").val();
+		var datetimepickerIn = $("#datetimepickerIn").val();
+		var datetimepickerOut = $("#datetimepickerOut").val();
+		var description = $("#description").val();
+		var measurement = $("#measurement").val();
+		var supervisor = $("#supervisor").val();
+		var fitter = $("#fitter").val();
+		var welder = $("#welder").val();
+		var helper = $("#helper").val();
+		var rigger = $("#rigger").val();
+		var electrician = $("#electrician").val();
+		var remarks = $("#remarks").val();
+		var id = $("#saveForm").attr("Update-id");
+		if(projectLocation && datetimepickerIn && datetimepickerOut && description && measurement){
+			$.ajax({
+        	  	url: "dpr.php",
+			data: {
+			  operation:"addDpr",
+			  projectLocation: projectLocation,
+			  datetimepickerIn:datetimepickerIn,
+			  datetimepickerOut:datetimepickerOut,
+			  description:description,
+			  measurement:measurement,
+			  supervisor:supervisor,
+			  fitter:fitter,
+			  welder:welder,
+			  helper:helper,
+			  rigger:rigger,
+			  electrician:electrician,
+			  remarks:remarks,
+			  id:id||""
+			},
+    			type: "POST"
+        	  }).done(function( json ) {
+        	  	location.reload();
+        	  	$("#loading").hide();
+        	  }).fail(function(xhr, status, errorThrown){
+        	  	console.log(errorThrown);        	  	
+        	  	$("#loading").hide();
+        	  });
+		}
+		
+	});
+	
+			  
+	$("#delete-dialog").dialog({
+               autoOpen: false,
+               modal: true,
+               buttons: {
+        	"Delete item": function() {
+        	  $("#loading").show();
+        	  $("#loading").height($(document).height());
+        	  var paramObj = $(this).data('paramObj');
+        	  var oTable = paramObj.oTable;
+        	  $.ajax({
+			url: "dpr.php",
+			data: {
+			  operation: paramObj.operation,
+			  id: paramObj.id,
+			  passcode:$("#passcode").val()
+			},
+			type: "GET"
+			}).done(function( json ) {
+				console.log(json);
+				if(json==="Please enter correct passcode to delete."){
+					$("#loading").hide();
+					window.location.hash = "";
+					alert("Please enter correct passcode to delete.");
+					
+				}else{
+					window.location.hash = "";
+				        oTable.ajax.reload(function(){
+				       		initCompleteFunction();
+				       		$("#loading").hide();		
+					});
+				}
+			}).fail(function(xhr, status, errorThrown){
+			       $("#loading").hide();
+			       window.location.hash = "";
+			       console.log(errorThrown);        	  	
+			});
+        	  
+          	  $( this ).dialog( "close" );
+        	},
+	        Cancel: function() {
+	          $( this ).dialog( "close" );
+	        }
+               }  
+        });    
+	
+</script>
+
+</html>
